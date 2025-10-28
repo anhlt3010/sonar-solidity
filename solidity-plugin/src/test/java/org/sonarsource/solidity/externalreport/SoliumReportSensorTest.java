@@ -42,7 +42,7 @@ public class SoliumReportSensorTest {
     List<ExternalIssue> externalIssues = SoliumTestHelper.executeSensor(new SoliumReportSensor(), context);
     assertThat(externalIssues).isNotEmpty();
     ExternalIssue firstExternalIssue = externalIssues.get(0);
-    assertThat(firstExternalIssue.ruleKey()).isEqualTo(RuleKey.parse("solium:security/no-block-members"));
+    assertThat(firstExternalIssue.ruleKey()).isEqualTo(RuleKey.parse("external_solium:security/no-block-members"));
     assertThat(firstExternalIssue.type()).isEqualTo(RuleType.CODE_SMELL);
     assertThat(firstExternalIssue.severity()).isEqualTo(Severity.MAJOR);
     assertThat(firstExternalIssue.primaryLocation().message()).isEqualTo("Avoid using 'now' (alias to 'block.timestamp').");

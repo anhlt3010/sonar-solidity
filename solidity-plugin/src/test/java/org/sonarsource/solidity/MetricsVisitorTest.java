@@ -11,7 +11,7 @@ import org.sonar.api.measures.FileLinesContextFactory;
 import org.sonarsource.solidity.frontend.SolidityParsingPhase;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Matchers.any;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

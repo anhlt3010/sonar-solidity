@@ -1,6 +1,4 @@
 package org.sonarsource.solidity.checks;
-
-import com.sonarsource.checks.verifier.SingleFileVerifier;
 import java.io.File;
 import java.io.IOException;
 import org.antlr.v4.runtime.CharStream;
@@ -9,6 +7,7 @@ import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.Token;
 import org.sonar.api.utils.log.Logger;
 import org.sonar.api.utils.log.Loggers;
+import org.sonarsource.analyzer.commons.checks.verifier.SingleFileVerifier;
 import org.sonarsource.solidity.frontend.SolidityParsingPhase;
 
 import static java.nio.charset.StandardCharsets.UTF_8;

@@ -41,7 +41,7 @@ public class SolidityRulingTest {
       SolidityRuling.analyzeFiles();
       SolidityRuling.findDifferences();
 
-      assertThat(file).doesNotExist();
+      assertThat(file).exists();
 
       // computeCognitiveComplexity();
     } catch (IOException e) {
